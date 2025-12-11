@@ -1,0 +1,8 @@
+# render config refresh
+services:
+  - type: web
+    name: encounter-bot
+    env: python
+    pythonVersion: "3.11.6"
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python bot.py"
